@@ -25,18 +25,18 @@ RegisterCommand('+increasewalkingspeed', function()
         originalSpeed = walkingSpeed
         if originalSpeed <= maxSpeed then
             walkingSpeed = originalSpeed + 0.1
-            print(walkingSpeed)
         end
     end
 end, false)
+
 RegisterCommand('-decreasewalkingspeed', function()
     if active then
         originalSpeed = walkingSpeed
         if originalSpeed >= minSpeed then
             walkingSpeed = originalSpeed - 0.1
-            print(walkingSpeed)
         end
     end
 end, false)
+
 RegisterKeyMapping('+increasewalkingspeed', 'Increase Walking Speed', 'MOUSE_WHEEL', 'IOM_WHEEL_UP')
 RegisterKeyMapping('-decreasewalkingspeed', 'Lower Walking Speed', 'MOUSE_WHEEL', 'IOM_WHEEL_DOWN')
