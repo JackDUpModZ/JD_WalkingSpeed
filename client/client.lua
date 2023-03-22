@@ -20,7 +20,7 @@ RegisterCommand('walkingspeed', function()
     end
 end, false)
 
-RegisterCommand('+increasewalkingspeed', function()
+RegisterCommand('increasewalkingspeed', function()
     if active then
         originalSpeed = walkingSpeed
         if originalSpeed <= maxSpeed then
@@ -29,7 +29,7 @@ RegisterCommand('+increasewalkingspeed', function()
     end
 end, false)
 
-RegisterCommand('-decreasewalkingspeed', function()
+RegisterCommand('decreasewalkingspeed', function()
     if active then
         originalSpeed = walkingSpeed
         if originalSpeed >= minSpeed then
@@ -38,5 +38,5 @@ RegisterCommand('-decreasewalkingspeed', function()
     end
 end, false)
 
-RegisterKeyMapping('+increasewalkingspeed', 'Increase Walking Speed', 'MOUSE_WHEEL', 'IOM_WHEEL_UP')
-RegisterKeyMapping('-decreasewalkingspeed', 'Lower Walking Speed', 'MOUSE_WHEEL', 'IOM_WHEEL_DOWN')
+RegisterKeyMapping('increasewalkingspeed', 'Increase Walking Speed', 'MOUSE_WHEEL', 'IOM_WHEEL_UP')
+RegisterKeyMapping('decreasewalkingspeed', 'Lower Walking Speed', 'MOUSE_WHEEL', 'IOM_WHEEL_DOWN')
